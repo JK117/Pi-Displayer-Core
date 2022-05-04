@@ -16,8 +16,8 @@ def init_screen(screen_device):
     init_title = 'Raspberry Pi'
     init_subtitle = "Initialize Completed"
 
-    title_w, title_h = font_title.getSize(init_title)
-    subtitle_w, subtitle_h = font_subtitle.getSize(init_subtitle)
+    title_w, title_h = font_title.getsize(init_title)
+    subtitle_w, subtitle_h = font_subtitle.getsize(init_subtitle)
 
     title_x_position = device_w / 2 - title_w / 2
     title_y_position = (device_h - title_h - subtitle_h - 2) // 3 + 1
